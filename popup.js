@@ -3,6 +3,7 @@ const translateBtn = document.querySelector('.translate-button');
 const output = document.querySelector('#output');
 const copyBtn = document.querySelector('.copy');
 const pasteBtn = document.querySelector('.paste');
+const RAPID_API_KEY = 'API KEY HERE';
 // Translate when translate button clicked
 translateBtn.addEventListener('click', () => {
     translateText(inputText.value).then((text) => {
@@ -61,8 +62,7 @@ async function translateText(text) {
             method: 'GET',
             headers: {
                 'x-rapidapi-host': 'google-translate20.p.rapidapi.com',
-                'x-rapidapi-key':
-                    '9cc82d9b21mshc5b0f3ff413cec4p1dd0f8jsn310b17ac1b65',
+                'x-rapidapi-key': RAPID_API_KEY,
             },
         }
     );
