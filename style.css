@@ -1,0 +1,62 @@
+textarea {
+    resize: none;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.input-wrapper,
+.output-wrapper {
+    border-right: 1px solid black;
+    position: relative;
+}
+
+.output-wrapper {
+    border: none;
+}
+
+#input {
+    margin: 0 20px;
+    width: 250px;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+#output {
+    margin: 0 20px;
+    width: 250px;
+    height: 100%;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+.translate-button,
+.copy {
+    cursor: pointer;
+    background: none;
+    border: none;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    color: #aaa;
+    position: absolute;
+    bottom: 10px;
+    left: 25px;
+}
+
+.paste {
+    cursor: pointer;
+    border: none;
+    background: none;
+    border-radius: 4px;
+    position: absolute;
+    bottom: 10px;
+
+    right: 25px;
+}
+
+.enabled {
+    color: #7d7;
+    border: 1px solid #7d7;
+}

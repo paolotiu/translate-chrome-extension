@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <h1>Translate</h1>
+        <hr />
+        <main>
+            <div class="input-wrapper">
+                <textarea
+                    name="input"
+                    id="input"
+                    cols="30"
+                    rows="10"
+                    placeholder="Enter text"
+                ></textarea>
+                <button class="translate-button" disabled>Translate</button>
+                <button class="paste enabled">Paste</button>
+            </div>
+            <div class="output-wrapper">
+                <textarea
+                    name="output"
+                    id="output"
+                    cols="30"
+                    rows="10"
+                    disabled="true"
+                    placeholder="Translated text will go here"
+                ></textarea>
+                <button class="copy" disabled>Copy</button>
+            </div>
+        </main>
+
+        <script src="popup.js"></script>
+    </body>
+</html>
